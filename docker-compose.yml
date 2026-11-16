@@ -1,0 +1,17 @@
+
+services:
+  servidor1:
+    image: ubuntu:latest
+    container_name: ansible-servidor1
+    command: sleep infinity
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+
+  servidor2:
+    image: ubuntu:latest
+    container_name: ansible-servidor2
+    command: sleep infinity
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
